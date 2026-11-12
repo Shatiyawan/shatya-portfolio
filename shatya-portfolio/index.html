@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firgin Shatyawan (Shatya) | Informatics Graduate, UI/UX, Web Design & Language Services</title>
+<meta name="description" content="Portfolio of Firgin Shatyawan (Shatya): Informatics graduate and multidisciplinary digital creative specializing in UI/UX design, web design, and translation services.">
+<meta name="author" content="Firgin Shatyawan">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Firgin Shatyawan (Shatya) | Digital Creative Portfolio">
+<meta property="og:description" content="UI/UX design, web design, graphic design and language services by an Informatics graduate from Baubau, Indonesia.">
+<meta property="og:image" content="assets/profile-photo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B7A75">
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<script>
+/* Set theme before first paint to avoid a flash. */
+(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}
+document.documentElement.setAttribute('data-theme',t);document.documentElement.classList.add('js')}catch(e){document.documentElement.classList.add('js')}})();
+</script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="container bar">
+    <a class="brand" href="#home" aria-label="Shatya, home"><span class="brand-mark" aria-hidden="true">S</span><span>Shatya</span></a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#home" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#services" data-i18n="nav.services">Services</a></li>
+        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="#cv" data-i18n="nav.cv">CV</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="controls">
+      <button class="icon-btn" id="lang-toggle" type="button" data-i18n-aria="ui.switchLang" aria-label="Switch language"><span id="lang-label">ID</span></button>
+      <button class="icon-btn" id="theme-toggle" type="button" data-i18n-aria="ui.toggleTheme" aria-label="Toggle dark mode"></button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" data-i18n-aria="ui.menu" aria-label="Menu"></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section id="home" class="hero" aria-labelledby="hero-name">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hello" data-i18n="hero.hello">Hello, I'm</p>
+        <h1 id="hero-name">Firgin Shatyawan</h1>
+        <p class="alias"><span data-i18n="hero.alias">Call me Awan</span> / Shatya</p>
+        <p class="hero-lead" data-i18n="hero.lead"></p>
+        <ul class="titles">
+          <li data-i18n="title.1"></li><li data-i18n="title.2"></li><li data-i18n="title.3"></li><li data-i18n="title.4"></li><li data-i18n="title.5"></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#portfolio" data-i18n="hero.explore">Explore my work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero.contact">Contact me</a>
+          <a class="btn btn-wa" data-wa target="_blank" rel="noopener" href="#"><span data-icon="whatsapp"></span><span data-i18n="hero.whatsapp">WhatsApp</span></a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <div class="arch"><img src="assets/profile-photo.jpg" width="640" height="800" alt="Portrait of Firgin Shatyawan" data-i18n-alt="hero.photoAlt" onerror="this.onerror=null;this.src='assets/icons/profile-placeholder.svg'"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="about" class="section" aria-labelledby="about-h">
+    <div class="container two-col">
+      <div>
+        <h2 id="about-h" data-i18n="about.title">About me</h2>
+        <p class="lead" data-i18n="about.bio"></p>
+      </div>
+      <aside class="card edu" aria-labelledby="edu-h">
+        <h3 id="edu-h" data-i18n="about.eduTitle">Education</h3>
+        <p class="edu-degree" data-i18n="about.degree"></p>
+        <p>Universitas Dayanu Ikhsanuddin</p>
+        <p class="muted">Baubau, Indonesia</p>
+        <p class="muted" data-i18n="about.titleNote"></p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt" aria-labelledby="skills-h">
+    <div class="container">
+      <h2 id="skills-h" data-i18n="skills.title">Skills & expertise</h2>
+      <p class="section-intro" data-i18n="skills.intro"></p>
+      <h3 class="sub" data-i18n="skills.primary">Primary expertise</h3>
+      <div class="primary-grid" id="skills-primary"></div>
+      <h3 class="sub" data-i18n="skills.additional">Additional skills</h3>
+      <ul class="chips" id="skills-additional"></ul>
+    </div>
+  </section>
+
+  <section id="experience" class="section" aria-labelledby="exp-h">
+    <div class="container narrow">
+      <h2 id="exp-h" data-i18n="exp.title">Experience</h2>
+      <p class="section-intro" data-i18n="exp.intro"></p>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <section id="services" class="section alt" aria-labelledby="svc-h">
+    <div class="container">
+      <h2 id="svc-h" data-i18n="services.title">Services</h2>
+      <p class="section-intro" data-i18n="services.intro"></p>
+      <div class="cards-3" id="services-grid"></div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section" aria-labelledby="pf-h">
+    <div class="container">
+      <h2 id="pf-h" data-i18n="portfolio.title">Portfolio</h2>
+      <p class="section-intro" data-i18n="portfolio.intro"></p>
+      <p class="notice" role="note" data-i18n="portfolio.notice"></p>
+      <div class="filters" id="filters" role="group" data-i18n-aria="portfolio.filterLabel" aria-label="Filter projects"></div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="cv" class="section alt" aria-labelledby="cv-h">
+    <div class="container">
+      <h2 id="cv-h" data-i18n="cv.title">CV & Resume Center</h2>
+      <p class="section-intro" data-i18n="cv.intro"></p>
+      <div class="cards-2" id="cv-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" aria-labelledby="ct-h">
+    <div class="container two-col">
+      <div>
+        <h2 id="ct-h" data-i18n="contact.title">Contact</h2>
+        <p class="lead" data-i18n="contact.intro"></p>
+        <a class="btn btn-wa big" data-wa target="_blank" rel="noopener" href="#"><span data-icon="whatsapp"></span><span data-i18n="contact.cta">Start a chat on WhatsApp</span></a>
+        <p class="muted small" data-i18n="contact.number"></p>
+      </div>
+      <ul class="contact-list" id="contact-list"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <p>&copy; <span id="year"></span> Firgin Shatyawan (Shatya)</p>
+    <a href="#top" data-i18n="ui.backToTop">Back to top</a>
+  </div>
+</footer>
+
+<a class="wa-float btn-wa" data-wa target="_blank" rel="noopener" href="#" data-i18n-aria="hero.whatsapp" aria-label="WhatsApp"><span data-icon="whatsapp"></span></a>
+
+<dialog id="project-dialog" aria-labelledby="pd-title"><div class="dialog-body" id="pd-body"></div></dialog>
+
+<dialog id="cv-dialog" class="cv-dialog" aria-labelledby="cvd-title">
+  <div class="cvd-head">
+    <h3 id="cvd-title"></h3>
+    <div class="cvd-actions">
+      <a class="btn btn-ghost sm" id="cvd-tab" target="_blank" rel="noopener" href="#"><span data-icon="external"></span><span data-i18n="cv.openTab">Open in new tab</span></a>
+      <a class="btn btn-primary sm" id="cvd-dl" href="#" download><span data-icon="download"></span><span data-i18n="cv.download">Download PDF</span></a>
+      <button class="icon-btn" id="cvd-close" type="button" data-i18n-aria="ui.close" aria-label="Close"><span data-icon="close"></span></button>
+    </div>
+  </div>
+  <iframe id="cvd-frame" title="CV preview"></iframe>
+  <p class="cvd-fallback small muted" data-i18n="cv.fallback"></p>
+</dialog>
+
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/language.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
